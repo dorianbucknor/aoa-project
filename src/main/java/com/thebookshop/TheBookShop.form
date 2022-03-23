@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="com.thebookshop.TheBookShop">
+  <grid id="27dc6" binding="mainPanel" layout-manager="CardLayout" hgap="0" vgap="0" show="13224">
+    <constraints>
+      <xy x="20" y="20" width="800" height="600"/>
+    </constraints>
+    <properties>
+      <autoscrolls value="true"/>
+      <background color="-16727131"/>
+      <foreground color="-13027015"/>
+      <maximumSize width="1920" height="1080"/>
+      <minimumSize width="800" height="600"/>
+      <preferredSize width="1024" height="720"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="13224" binding="mainScreen" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints>
+          <card name="mainScreenCard"/>
+        </constraints>
+        <properties>
+          <name value="mainScreen"/>
+          <opaque value="false"/>
+          <visible value="true"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <grid id="9e091" binding="topBar" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints border-constraint="North"/>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="99a16" class="javax.swing.JLabel" binding="theBookShopLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="The Book Shop"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="ad29f" binding="bottomBar" layout-manager="BorderLayout" hgap="0" vgap="0">
+            <constraints border-constraint="South"/>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="a3aae" class="javax.swing.JButton" binding="leaveButton">
+                <constraints border-constraint="East"/>
+                <properties>
+                  <borderPainted value="true"/>
+                  <contentAreaFilled value="true"/>
+                  <text value="Leave Shop"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="60181" binding="center" layout-manager="GridBagLayout">
+            <constraints border-constraint="Center"/>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <grid id="549a5" binding="searchBox" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+                <constraints>
+                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="2b782" class="javax.swing.JLabel" binding="bookTitleLabel">
+                    <constraints/>
+                    <properties>
+                      <requestFocusEnabled value="false"/>
+                      <text value="Book"/>
+                    </properties>
+                  </component>
+                  <component id="d0a2e" class="javax.swing.JTextField" binding="bookTitleField">
+                    <constraints/>
+                    <properties/>
+                  </component>
+                  <component id="a679e" class="javax.swing.JLabel" binding="authorLabel">
+                    <constraints/>
+                    <properties>
+                      <requestFocusEnabled value="false"/>
+                      <text value="Author"/>
+                    </properties>
+                  </component>
+                  <component id="a5d7c" class="javax.swing.JTextField" binding="authorField">
+                    <constraints/>
+                    <properties/>
+                  </component>
+                  <component id="a5412" class="javax.swing.JLabel" binding="publishedYearLabel">
+                    <constraints/>
+                    <properties>
+                      <text value="Published Year "/>
+                    </properties>
+                  </component>
+                  <component id="9d271" class="javax.swing.JTextField" binding="publishedYearField">
+                    <constraints/>
+                    <properties>
+                      <columns value="4"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <component id="470ce" class="javax.swing.JLabel" binding="search">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <alignmentX value="0.0"/>
+                  <horizontalAlignment value="0"/>
+                  <text value="Search For Book"/>
+                </properties>
+              </component>
+              <component id="312c7" class="javax.swing.JButton" binding="searchButton">
+                <constraints>
+                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <text value="Search"/>
+                </properties>
+              </component>
+              <vspacer id="b6a34">
+                <constraints>
+                  <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+              </vspacer>
+              <grid id="fae73" binding="resultPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints>
+                  <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <visible value="true"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <grid id="111fa" binding="resultBookCover" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                    <margin top="0" left="0" bottom="0" right="0"/>
+                    <constraints border-constraint="Center"/>
+                    <properties/>
+                    <border type="none"/>
+                    <children/>
+                  </grid>
+                  <component id="4d21" class="javax.swing.JButton" binding="viewBookButton">
+                    <constraints border-constraint="South"/>
+                    <properties>
+                      <text value="View Book"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <hspacer id="afb21">
+                <constraints>
+                  <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+              </hspacer>
+              <hspacer id="fdf4a">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+              </hspacer>
+            </children>
+          </grid>
+        </children>
+      </grid>
+      <grid id="fbddc" binding="bookView" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints>
+          <card name="bookViewCard"/>
+        </constraints>
+        <properties>
+          <name value="bookView"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <grid id="a939c" binding="controls" layout-manager="GridLayoutManager" row-count="1" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints border-constraint="South"/>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="36dec" class="javax.swing.JButton" binding="purchaseButton">
+                <constraints>
+                  <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Purchase"/>
+                </properties>
+              </component>
+              <component id="443bd" class="javax.swing.JButton" binding="viewExitButton">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Exit"/>
+                </properties>
+              </component>
+              <component id="d203" class="javax.swing.JLabel" binding="bookPrice">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="1" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <focusable value="false"/>
+                  <text value="$10000"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="5cb06" binding="book" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints border-constraint="Center"/>
+            <properties/>
+            <border type="none"/>
+            <children/>
+          </grid>
+          <grid id="641ce" binding="titleBar" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+            <constraints border-constraint="North"/>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="daed0" class="javax.swing.JLabel" binding="theBookShopTitle">
+                <constraints/>
+                <properties>
+                  <text value="The Book Shop"/>
+                </properties>
+              </component>
+              <component id="62a29" class="javax.swing.JLabel" binding="bookTitle">
+                <constraints/>
+                <properties>
+                  <text value="Label"/>
+                </properties>
+              </component>
+              <component id="a6fbf" class="javax.swing.JLabel" binding="bookAuthor">
+                <constraints/>
+                <properties>
+                  <text value="Label"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
