@@ -1,4 +1,5 @@
-import com.thebookshop.*;
+import thebookshop.Books;
+import thebookshop.Shop;
 
 public class Main {
 
