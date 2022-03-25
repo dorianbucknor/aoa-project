@@ -129,6 +129,12 @@ public class Shop extends JFrame {
         resultPanel = new JPanel();
         addToBooksScrollPane();
         allBooksScroll.getVerticalScrollBar().setUnitIncrement(50);
+        JPanel header = new JPanel(new GridLayout(0, 3));
+        header.add(new JLabel("Title"));
+        header.add(new JLabel("Author"));
+        header.add(new JLabel("Year"));
+
+        allBooksScroll.setColumnHeaderView(header);
 
         publishedYearField.addKeyListener(new KeyAdapter() {
             public void keyTyped(KeyEvent e) {
